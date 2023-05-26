@@ -5,12 +5,12 @@
 
 /* Clear fix hack */
 .clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
 }
 
 .clear {
@@ -28,7 +28,31 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
+header{
+  display: flex;
+  flex-direction: row;
+}
+header img{
+  flex-basis: 20%;
+}
+header nav{
+  flex-basis: 80%;
+  margin: auto 0;
+  text-align: right;
+}
+header a{
+  text-decoration: none;
+}
+
+#logo{
+  height: 80px;
+  width: 240px;
+}
+
+li {  
+  display: inline;
+  list-style: none;
+  padding-left: 8%;
 }
 
 main *{
@@ -36,6 +60,7 @@ main *{
 }
 
 #favFood{
+  padding: 0 5%;
 }
 
 .upper-food-sect,
@@ -46,30 +71,17 @@ main *{
 
 .food{
   flex: 1;
-  margin: 1% 1%;
-  height: 600px;
+  padding: 1% 2% 0% 2%;
 }
 
-#food1, #food2, #food3, #food4, #food5, #food6{
-}
-#food1{  
+#food1, #food2, #food3, #food4, #food5, #food6{ 
   height: 200px;
-  background-image: url('../img/pizza.jpg');
+  width: 100%;
+  object-fit: cover;
 }
-#food2{  
-  background-image: url('../img/sushi.jpeg');
-}
-#food3{  
-  background-image: url('../img/hotpot.jpg');
-}
-#food4{  
-  background-image: url('../img/biryani.jpg');
-}
-#food5{  
-  background-image: url('../img/pizza.jpg');
-}
-#food6{  
-  background-image: url('../img/pizza.jpg');
+
+.food p{
+  text-align: justify;
 }
 
 /*************** Footer style ****************/
