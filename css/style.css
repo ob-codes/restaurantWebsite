@@ -22,21 +22,105 @@
 /*******************************************/
 
 body {
-
+  margin: 1% 2%;
 }
-
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 header {
-
 }
 
-footer {
-
+main *{
+  text-align: center;
 }
 
+#favFood{
+}
+
+.upper-food-sect,
+.lower-food-sect{
+  display: flex;
+  flex-direction: row;
+}
+
+.food{
+  flex: 1;
+  margin: 1% 1%;
+  height: 600px;
+}
+
+#food1, #food2, #food3, #food4, #food5, #food6{
+}
+#food1{  
+  height: 200px;
+  background-image: url('../img/pizza.jpg');
+}
+#food2{  
+  background-image: url('../img/sushi.jpeg');
+}
+#food3{  
+  background-image: url('../img/hotpot.jpg');
+}
+#food4{  
+  background-image: url('../img/biryani.jpg');
+}
+#food5{  
+  background-image: url('../img/pizza.jpg');
+}
+#food6{  
+  background-image: url('../img/pizza.jpg');
+}
+
+/*************** Footer style ****************/
+
+footer{
+  background-color: black;
+  color: lightgray;
+  font-family: sans-serif;
+  padding: 2% 0;
+  width: 100%;
+  height: 210px;
+}
+
+footer div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+div a{
+  margin: 10px;
+}
+
+footer p{  
+  font-size:1.5rem;
+  text-align:center;
+  text-justify:newspaper;
+}
+
+/******************************************
+/* TWITTER LOGO
+/*******************************************/
+.fa {
+  padding: 20px;
+  font-size: 35px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+/* Github */
+.fa-github {
+  background: white;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
