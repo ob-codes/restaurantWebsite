@@ -86,15 +86,25 @@ main{
   display: flex;
   flex-direction: row;
 }
+.upper-food-sect{
+  padding: 30px 0 0 0;
+}
+.lower-food-sect{
+  padding: 0 0 30px 0;
+}
 
 .food{
   flex: 1;
+  margin: 20px 1% 20px 1% ;
   padding: 1% 2% 0% 2%;
+  /* box-shadow: rgba(77, 77, 208, 0.2) 0px 7px 29px 0px; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
 }
 
 #food1, #food2, #food3, #food4, #food5, #food6{ 
-  height: 200px;
+  height: 250px;
   width: 100%;
+  padding: 15px 0 0 0;
   object-fit: cover;
 }
 
@@ -103,25 +113,25 @@ main{
 }
 
 /******************** community style ***********************/
-.community{
+#community{
   height: 300px;
   padding: 50px 20%;
   text-align: center;
 }
 
 /******************** location style ***********************/
-.location{
+#location{
   display: flex;
   flex-direction: row;
   background-color: rgb(245, 245, 245);
   height: 360px;
   padding: 30px 5%;
 }
-.location *{
+#location *{
   flex: 1;
 }
-.location h2,
-.location p{
+#location h2,
+#location p{
   padding: 0 5%;
   text-align: center;
 }
