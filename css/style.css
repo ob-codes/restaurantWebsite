@@ -115,8 +115,20 @@ main{
 /******************** community style ***********************/
 #community{
   height: 300px;
-  padding: 50px 20%;
+  padding: 0 5%;
   text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+#community *{
+  flex:1;
+}
+form input{
+  display: block;
+  width: 70%;
+}
+#community .form-text{
+  flex:1;
 }
 
 /******************** location style ***********************/
