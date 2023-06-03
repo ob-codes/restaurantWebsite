@@ -1,4 +1,5 @@
 /* Box Model Hack */
+
 * {
   box-sizing: border-box;
 }
@@ -74,6 +75,9 @@ main{
 .left-main-sect *{
   text-align: left;
 }
+.left-main-sect h1{
+  text-shadow: 2px 2px 5px gray;
+}
 
 /******************** food style ***********************/
 #favFood{
@@ -114,21 +118,40 @@ main{
 
 /******************** community style ***********************/
 #community{
-  height: 300px;
-  padding: 0 5%;
-  text-align: center;
+  height: 350px;
+  padding: 50px 5%;
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
-#community *{
+#community > *{
   flex:1;
+  padding: 0 3%;
+}
+form label{
+  display: inline-block;
+  text-align: left;
+  width: 25%;
+  margin: 10px 0;
 }
 form input{
+  display: inline-block;
+  height: 2rem;
+  width: 73%;
+  margin: 10px 0;
+}
+form #comments{
+  height: 90px;
+}
+form button{
   display: block;
-  width: 70%;
+  margin: 10px auto 0 auto;
+  padding: 5px 12px ;
+  text-align: center;
 }
 #community .form-text{
   flex:1;
+  text-align: center;
 }
 
 /******************** location style ***********************/
