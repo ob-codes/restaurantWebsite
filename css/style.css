@@ -211,7 +211,7 @@ footer{
 .footer-content li{  
   list-style: none;
   display: block;
-  padding-left: 0;
+  padding: 5px 0;
 }
 /*************** ob-banner style ****************/
 .ob-banner{
